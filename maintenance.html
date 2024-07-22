@@ -1,11 +1,64 @@
-<body class="bg-gray-100 dark:bg-gray-800">
-  <div class="min-h-screen flex flex-col justify-center items-center">
-    <img src="https://www.svgrepo.com/show/426192/cogs-settings.svg" alt="Logo" class="mb-8 h-40">
-    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-700 dark:text-white mb-4">Site is under maintenance</h1>
-    <p class="text-center text-gray-500 dark:text-gray-300 text-lg md:text-xl lg:text-2xl mb-8">We're working hard to improve the user experience. Stay tuned!</p>
-    <div class="flex space-x-4">
-      <a href="#" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded dark:bg-gray-700 dark:hover:bg-gray-600">Contact Us</a>
-      <a href="#" class="border-2 border-gray-800 text-black font-bold py-3 px-6 rounded dark:text-white dark:border-white">Reload</a>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Maintenance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="maintenance-container">
+        <div class="maintenance-content">
+            <h1>Nous reviendrons bientôt !</h1>
+            <p>Nous effectuons actuellement des travaux de maintenance. Merci de votre patience.</p>
+            <div class="countdown">
+                <p>Nous serons de retour dans :</p>
+                <div class="countdown-timer">
+                    <div class="time-unit">
+                        <span id="days">00</span>
+                        <p>Jours</p>
+                    </div>
+                    <div class="time-unit">
+                        <span id="hours">00</span>
+                        <p>Heures</p>
+                    </div>
+                    <div class="time-unit">
+                        <span id="minutes">00</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="time-unit">
+                        <span id="seconds">00</span>
+                        <p>Secondes</p>
+                    </div>
+                </div>
+            </div>
+            <a href="mailto:contact@example.com" class="contact-button">Nous contacter</a>
+        </div>
     </div>
-  </div>
+
+    <script>
+        function updateCountdown() {
+            const endDate = new Date("2024-07-29T00:00:00Z").getTime();
+            const now = new Date().getTime();
+            const timeLeft = endDate - now;
+
+            if (timeLeft < 0) {
+                document.querySelector('.countdown').innerHTML = "<p>La maintenance est terminée !</p>";
+                return;
+            }
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerText = String(days).padStart(2, '0');
+            document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+            document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
 </body>
+</html>
