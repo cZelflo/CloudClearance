@@ -1,4 +1,4 @@
-# CloudClearance Discord Bot License
+# CloudClearance License
 
 ## Copyright (c) 2024 CloudClearance
 
