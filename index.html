@@ -25,6 +25,8 @@
             background: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px; /* Limit the width of the container */
+            margin: auto; /* Center the container horizontally */
         }
         .btn {
             display: inline-block;
@@ -46,11 +48,32 @@
             text-decoration: none;
             margin: 0 10px;
         }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        ol {
+            text-align: left;
+            margin: 0 auto;
+            display: inline-block;
+            max-width: 600px;
+        }
+        ol li {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Add My Discord Bot to Your Server</h1>
+        <h1>How to Add the Bot to Your Discord Server</h1>
+        <ol>
+            <li>Make sure you are logged into your Discord account.</li>
+            <li>Go to the bot's authorization page using the link below.</li>
+            <li>Select the Discord server where you want to add the bot.</li>
+            <li>Click the "Authorize" button to add the bot to the selected server.</li>
+            <li>Complete the CAPTCHA to confirm you are not a robot.</li>
+            <li>Once the bot is added, it will be available on the server and ready to use.</li>
+        </ol>
         <a href="https://discord.com/oauth2/authorize?client_id=1040365486153662474&permissions=2147493888&integration_type=0&scope=bot" class="btn">Invite Bot</a>
         <div class="links">
             <a href="https://czelflo.github.io/CloudClearance/privacy-policy.html">Privacy Policy</a>
