@@ -24,112 +24,126 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-        h1, h2, h3 {
-            color: #333;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         }
         h1 {
-            font-size: 28px;
+            font-size: 32px;
             margin-bottom: 20px;
             text-align: center;
         }
         h2 {
-            font-size: 24px;
+            font-size: 26px;
             margin-top: 20px;
-            margin-bottom: 10px;
+            color: #4A90E2;
         }
         h3 {
-            font-size: 20px;
+            font-size: 22px;
             margin-top: 15px;
-            margin-bottom: 10px;
+            color: #333;
         }
         p {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 1.6;
             margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "•";
+            color: #4A90E2;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
         }
         .btn {
             display: inline-block;
             padding: 12px 25px;
-            font-size: 18px;
+            font-size: 20px;
             margin: 20px 0;
             color: white;
-            background-color: #7289da;
+            background-color: #4A90E2;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             text-decoration: none;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
         .btn:hover {
-            background-color: #5b6eae;
+            background-color: #357ABD;
         }
         .links {
-            margin-top: 20px;
+            margin-top: 30px;
             text-align: center;
         }
         .links a {
-            color: #7289da;
+            color: #4A90E2;
             text-decoration: none;
             margin: 0 15px;
-            font-size: 16px;
+            font-size: 18px;
         }
         .links a:hover {
             text-decoration: underline;
+        }
+        .icon {
+            margin-right: 10px;
+            color: #4A90E2;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>CloudClearance Discord Bot</h1>
-        <p>Welcome to CloudClearance, your specialized Discord bot for aviation information. With CloudClearance, you can easily retrieve METAR data and detailed airport information using simple commands. Add CloudClearance to your server to enjoy these features directly on Discord.</p>
+        <h1>☁️ CloudClearance Discord Bot</h1>
+        <p>Welcome to <strong>CloudClearance</strong>, your specialized Discord bot for aviation information. ✈️ Easily retrieve METAR data and detailed airport information with simple commands. Add CloudClearance to your server and enjoy these features directly on Discord.</p>
 
-        <h2>Features</h2>
+        <h2>🌟 Features</h2>
         
-        <h3>Available Commands</h3>
+        <h3>🛠️ Available Commands</h3>
         
         <h4>/metar</h4>
-        <p><strong>Description:</strong> Get the METAR for a given airport ICAO code.</p>
-        <p><strong>Usage:</strong></p>
+        <p><i class="fas fa-info-circle icon"></i><strong>Description:</strong> Get the METAR for a given airport ICAO code.</p>
+        <p><i class="fas fa-terminal icon"></i><strong>Usage:</strong></p>
         <ul>
             <li><strong>Command:</strong> /metar</li>
-            <li><strong>Options:</strong> icao (required): The ICAO code of the airport (4 characters).</li>
+            <li><strong>Options:</strong> <em>icao</em> (required): The ICAO code of the airport (4 characters).</li>
             <li><strong>Example:</strong> /metar icao:LFPG</li>
         </ul>
 
         <h4>/airportinfo</h4>
-        <p><strong>Description:</strong> Get detailed information about an airport by ICAO code.</p>
-        <p><strong>Usage:</strong></p>
+        <p><i class="fas fa-info-circle icon"></i><strong>Description:</strong> Get detailed information about an airport by ICAO code.</p>
+        <p><i class="fas fa-terminal icon"></i><strong>Usage:</strong></p>
         <ul>
             <li><strong>Command:</strong> /airportinfo</li>
-            <li><strong>Options:</strong> icao (required): The ICAO code of the airport (4 characters).</li>
+            <li><strong>Options:</strong> <em>icao</em> (required): The ICAO code of the airport (4 characters).</li>
             <li><strong>Example:</strong> /airportinfo icao:LFPG</li>
         </ul>
 
         <h4>/help</h4>
-        <p><strong>Description:</strong> List all available commands.</p>
-        <p><strong>Usage:</strong></p>
+        <p><i class="fas fa-info-circle icon"></i><strong>Description:</strong> List all available commands.</p>
+        <p><i class="fas fa-terminal icon"></i><strong>Usage:</strong></p>
         <ul>
             <li><strong>Command:</strong> /help</li>
         </ul>
 
-        <h2>How to Add CloudClearance to Your Server</h2>
+        <h2>🚀 How to Add CloudClearance to Your Server</h2>
         <p>1. Click the button below to invite CloudClearance to your Discord server.</p>
         <p>2. Follow the instructions to authorize the bot and select the server you want to add it to.</p>
         <p>3. CloudClearance will be ready to use as soon as the authorization is complete.</p>
 
-        <a href="https://discord.com/oauth2/authorize?client_id=1040365486153662474&permissions=2147486784&integration_type=0&scope=bot" class="btn">Invite Bot</a>
+        <a href="https://discord.com/oauth2/authorize?client_id=1040365486153662474&permissions=2147486784&integration_type=0&scope=bot" class="btn">🚁 Invite Bot</a>
 
-        <h2>Configuration</h2>
-        <p>CloudClearance is ready to use as soon as it is added to your server. No additional configuration is required to start using its features.</p>
+        <h2>⚙️ Configuration</h2>
+        <p><i class="fas fa-cog icon"></i> CloudClearance is ready to use as soon as it is added to your server. No additional configuration is required to start using its features.</p>
 
-        <h2>Support</h2>
-        <p>If you have any questions or issues with CloudClearance, feel free to contact us via our <a href="https://discord.gg/YOUR_SUPPORT_SERVER">support Discord server</a>.</p>
+        <h2>📞 Support</h2>
+        <p><i class="fas fa-life-ring icon"></i> If you have any questions or issues with CloudClearance, feel free to contact us via our <a href="https://discord.gg/YOUR_SUPPORT_SERVER">support Discord server</a>.</p>
 
-        <h2>License</h2>
-        <p>CloudClearance is distributed under the MIT License. For more information, please see the LICENSE file in the GitHub repository.</p>
+        <h2>📜 License</h2>
+        <p><i class="fas fa-file-alt icon"></i> CloudClearance is distributed under the MIT License. For more information, please see the LICENSE file in the GitHub repository.</p>
 
         <div class="links">
             <a href="https://czelflo.github.io/CloudClearance/privacy-policy.html">Privacy Policy</a>
