@@ -16,49 +16,45 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed; /* Ensures background covers the viewport */
-            height: 100vh; /* Ensure body takes up full height */
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background-attachment: fixed;
+            padding: 20px;
+            color: #333;
         }
         .container {
-            max-width: 800px; /* Adjust container width */
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #333;
         }
         h1 {
-            font-size: 24px; /* Adjusted font size */
-            color: #333;
+            font-size: 28px;
             margin-bottom: 20px;
+            text-align: center;
         }
-        .instructions {
-            text-align: left;
-            margin: 0 auto;
-            max-width: 700px;
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
-        .instruction-item {
-            display: flex;
-            align-items: center;
+        h3 {
+            font-size: 20px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
             margin-bottom: 15px;
-        }
-        .instruction-item i {
-            font-size: 24px; /* Adjusted icon size */
-            margin-right: 15px;
-            color: #7289da;
-        }
-        .instruction-item p {
-            margin: 0;
-            font-size: 16px; /* Adjusted font size */
-            color: #555;
         }
         .btn {
             display: inline-block;
             padding: 12px 25px;
-            font-size: 18px; /* Adjusted font size */
+            font-size: 18px;
             margin: 20px 0;
             color: white;
             background-color: #7289da;
@@ -68,10 +64,11 @@
             cursor: pointer;
         }
         .btn:hover {
-            background-color: #5b6eae; /* Darker shade on hover */
+            background-color: #5b6eae;
         }
         .links {
             margin-top: 20px;
+            text-align: center;
         }
         .links a {
             color: #7289da;
@@ -86,34 +83,54 @@
 </head>
 <body>
     <div class="container">
-        <h1>How to Add the Bot to Your Discord Server</h1>
-        <div class="instructions">
-            <div class="instruction-item">
-                <i class="fas fa-sign-in-alt"></i>
-                <p>Make sure you are logged into your Discord account.</p>
-            </div>
-            <div class="instruction-item">
-                <i class="fas fa-link"></i>
-                <p>Go to the bot's authorization page using the link below.</p>
-            </div>
-            <div class="instruction-item">
-                <i class="fas fa-check-square"></i>
-                <p>Select the Discord server where you want to add the bot.</p>
-            </div>
-            <div class="instruction-item">
-                <i class="fas fa-check"></i>
-                <p>Click the "Authorize" button to add the bot to the selected server.</p>
-            </div>
-            <div class="instruction-item">
-                <i class="fas fa-shield-alt"></i>
-                <p>Complete the CAPTCHA to confirm you are not a robot.</p>
-            </div>
-            <div class="instruction-item">
-                <i class="fas fa-thumbs-up"></i>
-                <p>Once the bot is added, it will be available on the server and ready to use.</p>
-            </div>
-        </div>
+        <h1>CloudClearance Discord Bot</h1>
+        <p>Welcome to CloudClearance, your specialized Discord bot for aviation information. With CloudClearance, you can easily retrieve METAR data and detailed airport information using simple commands. Add CloudClearance to your server to enjoy these features directly on Discord.</p>
+
+        <h2>Features</h2>
+        
+        <h3>Available Commands</h3>
+        
+        <h4>/metar</h4>
+        <p><strong>Description:</strong> Get the METAR for a given airport ICAO code.</p>
+        <p><strong>Usage:</strong></p>
+        <ul>
+            <li><strong>Command:</strong> /metar</li>
+            <li><strong>Options:</strong> icao (required): The ICAO code of the airport (4 characters).</li>
+            <li><strong>Example:</strong> /metar icao:LFPG</li>
+        </ul>
+
+        <h4>/airportinfo</h4>
+        <p><strong>Description:</strong> Get detailed information about an airport by ICAO code.</p>
+        <p><strong>Usage:</strong></p>
+        <ul>
+            <li><strong>Command:</strong> /airportinfo</li>
+            <li><strong>Options:</strong> icao (required): The ICAO code of the airport (4 characters).</li>
+            <li><strong>Example:</strong> /airportinfo icao:LFPG</li>
+        </ul>
+
+        <h4>/help</h4>
+        <p><strong>Description:</strong> List all available commands.</p>
+        <p><strong>Usage:</strong></p>
+        <ul>
+            <li><strong>Command:</strong> /help</li>
+        </ul>
+
+        <h2>How to Add CloudClearance to Your Server</h2>
+        <p>1. Click the button below to invite CloudClearance to your Discord server.</p>
+        <p>2. Follow the instructions to authorize the bot and select the server you want to add it to.</p>
+        <p>3. CloudClearance will be ready to use as soon as the authorization is complete.</p>
+
         <a href="https://discord.com/oauth2/authorize?client_id=1040365486153662474&permissions=2147493888&integration_type=0&scope=bot" class="btn">Invite Bot</a>
+
+        <h2>Configuration</h2>
+        <p>CloudClearance is ready to use as soon as it is added to your server. No additional configuration is required to start using its features.</p>
+
+        <h2>Support</h2>
+        <p>If you have any questions or issues with CloudClearance, feel free to contact us via our <a href="https://discord.gg/YOUR_SUPPORT_SERVER">support Discord server</a>.</p>
+
+        <h2>License</h2>
+        <p>CloudClearance is distributed under the MIT License. For more information, please see the LICENSE file in the GitHub repository.</p>
+
         <div class="links">
             <a href="https://czelflo.github.io/CloudClearance/privacy-policy.html">Privacy Policy</a>
             <a href="https://czelflo.github.io/CloudClearance/terms-of-service.html">Terms of Service</a>
