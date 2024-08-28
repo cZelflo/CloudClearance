@@ -41,7 +41,7 @@ CloudClearance is ready to use as soon as it is added to your server. No additio
 
 ## Support
 
-If you have any questions or issues with CloudClearance, feel free to contact us via our [support Discord server](https://discord.gg/YOUR_SUPPORT_SERVER).
+If you have any questions or issues with CloudClearance, feel free to contact us via our [support Discord server](https://discord.com/invite/gPuvyGdUpa).
 
 ## License
 
