@@ -10,38 +10,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            background-image: url('https://cdn.discordapp.com/attachments/1236406710160068742/1266042606932983894/Design_sans_titre.png?ex=66ce8e4f&is=66cd3ccf&hm=37e3756c050bc84438958b2e7ac950759ff43832c22ce7939a5e48a0590f1fd8&');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            padding: 20px;
+            background-color: #f0f4f8;
             color: #333;
+            padding: 0;
+        }
+        header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-        }
-        h1 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            text-align: center;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            font-size: 26px;
-            margin-top: 20px;
+            font-size: 28px;
             color: #4A90E2;
+            margin-bottom: 15px;
         }
         h3 {
-            font-size: 22px;
-            margin-top: 15px;
+            font-size: 24px;
             color: #333;
+            margin-top: 15px;
         }
         p {
             font-size: 18px;
@@ -63,18 +65,19 @@
         .btn {
             display: inline-block;
             padding: 12px 25px;
-            font-size: 20px;
+            font-size: 18px;
             margin: 20px 0;
             color: white;
             background-color: #4A90E2;
             border: none;
-            border-radius: 10px;
+            border-radius: 5px;
             text-decoration: none;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
         .btn:hover {
             background-color: #357ABD;
+            transform: translateY(-2px);
         }
         .links {
             margin-top: 30px;
@@ -89,15 +92,23 @@
         .links a:hover {
             text-decoration: underline;
         }
-        .icon {
-            margin-right: 10px;
-            color: #4A90E2;
+        footer {
+            background-color: #4A90E2;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>☁️ CloudClearance Discord Bot</h1>
+    </header>
+    <div class="container">
         <p>Welcome to <strong>CloudClearance</strong>, your specialized Discord bot for aviation information. ✈️ Easily retrieve METAR data and detailed airport information with simple commands. Add CloudClearance to your server and enjoy these features directly on Discord.</p>
 
         <h2>🌟 Features</h2>
@@ -105,8 +116,8 @@
         <h3>🛠️ Available Commands</h3>
         
         <h4>/metar</h4>
-        <p><i class="fas fa-info-circle icon"></i><strong>Description:</strong> Get the METAR for a given airport ICAO code.</p>
-        <p><i class="fas fa-terminal icon"></i><strong>Usage:</strong></p>
+        <p><i class="fas fa-info-circle"></i><strong>Description:</strong> Get the METAR for a given airport ICAO code.</p>
+        <p><i class="fas fa-terminal"></i><strong>Usage:</strong></p>
         <ul>
             <li><strong>Command:</strong> /metar</li>
             <li><strong>Options:</strong> <em>icao</em> (required): The ICAO code of the airport (4 characters).</li>
@@ -114,8 +125,8 @@
         </ul>
 
         <h4>/airportinfo</h4>
-        <p><i class="fas fa-info-circle icon"></i><strong>Description:</strong> Get detailed information about an airport by ICAO code.</p>
-        <p><i class="fas fa-terminal icon"></i><strong>Usage:</strong></p>
+        <p><i class="fas fa-info-circle"></i><strong>Description:</strong> Get detailed information about an airport by ICAO code.</p>
+        <p><i class="fas fa-terminal"></i><strong>Usage:</strong></p>
         <ul>
             <li><strong>Command:</strong> /airportinfo</li>
             <li><strong>Options:</strong> <em>icao</em> (required): The ICAO code of the airport (4 characters).</li>
@@ -123,8 +134,8 @@
         </ul>
 
         <h4>/help</h4>
-        <p><i class="fas fa-info-circle icon"></i><strong>Description:</strong> List all available commands.</p>
-        <p><i class="fas fa-terminal icon"></i><strong>Usage:</strong></p>
+        <p><i class="fas fa-info-circle"></i><strong>Description:</strong> List all available commands.</p>
+        <p><i class="fas fa-terminal"></i><strong>Usage:</strong></p>
         <ul>
             <li><strong>Command:</strong> /help</li>
         </ul>
@@ -137,18 +148,21 @@
         <a href="https://discord.com/oauth2/authorize?client_id=1040365486153662474&permissions=2147486784&integration_type=0&scope=bot" class="btn">🚁 Invite Bot</a>
 
         <h2>⚙️ Configuration</h2>
-        <p><i class="fas fa-cog icon"></i> CloudClearance is ready to use as soon as it is added to your server. No additional configuration is required to start using its features.</p>
+        <p><i class="fas fa-cog"></i> CloudClearance is ready to use as soon as it is added to your server. No additional configuration is required to start using its features.</p>
 
         <h2>📞 Support</h2>
-        <p><i class="fas fa-life-ring icon"></i> If you have any questions or issues with CloudClearance, feel free to contact us via our <a href="https://discord.com/invite/gPuvyGdUpa">support Discord server</a>.</p>
+        <p><i class="fas fa-life-ring"></i> If you have any questions or issues with CloudClearance, feel free to contact us via our <a href="https://discord.com/invite/gPuvyGdUpa">support Discord server</a>.</p>
 
         <h2>📜 License</h2>
-        <p><i class="fas fa-file-alt icon"></i> CloudClearance is distributed under the MIT License. For more information, please see the LICENSE file in the GitHub repository.</p>
+        <p><i class="fas fa-file-alt"></i> CloudClearance is distributed under the MIT License. For more information, please see the LICENSE file in the GitHub repository.</p>
 
         <div class="links">
             <a href="https://czelflo.github.io/CloudClearance/privacy-policy.html">Privacy Policy</a>
             <a href="https://czelflo.github.io/CloudClearance/terms-of-service.html">Terms of Service</a>
         </div>
     </div>
+    <footer>
+        <p>&copy; 2024 CloudClearance. All rights reserved.</p>
+    </footer>
 </body>
 </html>
