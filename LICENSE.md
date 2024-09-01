@@ -4,7 +4,7 @@
 
 ### Grant of License
 
-Permission is granted to use the CloudClearance ("Software") solely in the form provided by the author. Users are permitted to:
+Permission is hereby granted to use CloudClearance ("Software") solely in the form provided by the author. Users are permitted to:
 
 - Install and operate the Software on their own Discord servers.
 - Utilize the Software's features as described in its documentation.
@@ -14,7 +14,7 @@ Permission is granted to use the CloudClearance ("Software") solely in the form 
 Users are **not** permitted to:
 
 - Modify, adapt, or create derivative works based on the Software.
-- Distribute, sublicense, or sell copies of the Software, in whole or in part.
+- Distribute, sublicense, sell, or otherwise redistribute copies of the Software, in whole or in part.
 - Reverse-engineer, decompile, or disassemble the Software.
 
 ### Disclaimer
@@ -24,6 +24,10 @@ The Software is provided "as is", without warranty of any kind, express or impli
 ### Contact
 
 For any questions or issues, please contact [LATER].
+
+### Revisions
+
+These terms may be updated from time to time, and users are encouraged to review them periodically.
 
 ---
 
