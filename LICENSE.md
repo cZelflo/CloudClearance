@@ -23,7 +23,7 @@ The Software is provided "as is", without warranty of any kind, express or impli
 
 ### Contact
 
-For any questions or issues, please contact [LATER].
+For any questions or issues, please contact cloudclearance.official@gmail.com
 
 ### Revisions
 
