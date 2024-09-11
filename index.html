@@ -4,116 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CloudClearance | Discord Bot</title>
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://i.imgur.com/RJDK212.png">
-    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            background-color: #f0f4f8;
-            color: #333;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background-color: #4A90E2;
-            color: white;
-            padding: 15px 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        .container {
-            flex: 1;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            font-size: 28px;
-            color: #4A90E2;
-            margin-bottom: 15px;
-        }
-        h3 {
-            font-size: 24px;
-            color: #333;
-            margin-top: 15px;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li::before {
-            content: "•";
-            color: #4A90E2;
-            font-weight: bold;
-            display: inline-block; 
-            width: 1em;
-            margin-left: -1em;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            font-size: 18px;
-            margin: 20px 0;
-            color: white;
-            background-color: #4A90E2;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #357ABD;
-            transform: translateY(-2px);
-        }
-        .links {
-            margin-top: 30px;
-            text-align: center;
-        }
-        .links a {
-            color: #4A90E2;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background-color: #4A90E2;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: auto;
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-        }
-        footer p {
-            margin: 0;
-            font-size: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>☁️ CloudClearance Discord Bot</h1>
+        <h1>☁️ CloudClearance</h1>
     </header>
+
+    <!-- Main Content Section -->
     <div class="container">
         <p>Welcome to <strong>CloudClearance</strong>, your specialized Discord bot for aviation information. ✈️ Easily retrieve METAR data and detailed airport information with simple commands. Add CloudClearance to your server and enjoy these features directly on Discord.</p>
 
@@ -151,7 +52,7 @@
         <p>2. Follow the instructions to authorize the bot and select the server you want to add it to.</p>
         <p>3. CloudClearance will be ready to use as soon as the authorization is complete.</p>
 
-        <a href="https://discord.com/oauth2/authorize?client_id=1040365486153662474&permissions=2147486784&integration_type=0&scope=bot" class="btn">🚁 Invite Bot</a>
+        <a href="https://discord.com/oauth2/authorize?client_id=1040365486153662474&permissions=2147486784&integration_type=0&scope=bot" class="btn" target="_blank">🚁 Invite Bot</a>
 
         <h2>⚙️ Configuration</h2>
         <p><i class="fas fa-cog"></i> CloudClearance is ready to use as soon as it is added to your server. No additional configuration is required to start using its features.</p>
