@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudClearance | Roadmap</title>
+    <link rel="icon" type="image/png" href="https://i.imgur.com/RJDK212.png">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <style>
+        /* Timeline container */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Each timeline element */
+        .timeline-content {
+            padding: 10px 40px;
+            position: relative;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        /* Left and right markers */
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -15px;
+            background-color: #2196F3;
+            border: 4px solid #fff;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* Special styling and animation for the official launch */
+        .launch {
+            background-color: #ffe680;
+            box-shadow: 0 0 20px rgba(255, 255, 0, 0.8), 0 0 30px rgba(255, 165, 0, 0.6);
+            animation: glow 2s infinite, bounce 2s ease-in-out;
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 20px rgba(255, 255, 0, 0.8), 0 0 30px rgba(255, 165, 0, 0.6); }
+            50% { box-shadow: 0 0 40px rgba(255, 255, 0, 1), 0 0 60px rgba(255, 165, 0, 0.8); }
+            100% { box-shadow: 0 0 20px rgba(255, 255, 0, 0.8), 0 0 30px rgba(255, 165, 0, 0.6); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Alternating colors for sections */
+        .timeline-content:nth-child(even) {
+            background-color: #e6f7ff;
+        }
+
+        /* Adding some spacing between each item */
+        .container {
+            margin: 40px auto;
+        }
+
+        /* Hide future roadmap entries */
+        .hidden {
+            display: none;
+        }
+
+        /* Mobile-friendly layout */
+        @media screen and (max-width: 600px) {
+            .timeline-content {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>☁️ CloudClearance - Roadmap</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="commands.html">Commands</a>
+            <a href="roadmap.html">Roadmap</a>
+            <a href="community.html">Community</a>
+        </nav>
+    </header>
+
+    <!-- Timeline Section -->
+    <div class="container">
+        <h2>🚀 CloudClearance Development Roadmap</h2>
+        <p>Here is a chronological overview of the upcoming features, improvements, and ideas for CloudClearance.</p>
+
+        <div class="timeline">
+            <!-- Official bot launch with special animation -->
+            <div class="timeline-content launch">
+                <h3>October 2024</h3>
+                <p><strong>Official Launch:</strong> CloudClearance bot will be officially launched with the following commands: <code>/metar</code>, <code>/taf</code>, and <code>/airportinfo</code>.</p>
+                <p><strong>New Features:</strong> Real-time integration with aviation services for live METAR, TAF, and airport information.</p>
+            </div>
+
+            <!-- New commands in November -->
+            <div class="timeline-content">
+                <h3>November 2024</h3>
+                <p><strong>New Features:</strong> Addition of new commands to expand bot functionality.</p>
+            </div>
+
+            <!-- Future hidden features -->
+            <div class="timeline-content hidden">
+                <h3>December 2024</h3>
+                <p><strong>New Features:</strong> Support for additional weather formats (SIGMET).</p>
+                <p><strong>Improvements:</strong> Enhanced output message customization and additional user preferences.</p>
+            </div>
+
+            <div class="timeline-content hidden">
+                <h3>Q1 2025</h3>
+                <p><strong>Planned:</strong> User dashboard to visualize bot usage and statistics.</p>
+                <p><strong>Ideas:</strong> Integration of a graphical interface for viewing METAR data.</p>
+            </div>
+
+            <div class="timeline-content hidden">
+                <h3>Q2 2025</h3>
+                <p><strong>Planned:</strong> Interactive maps for real-time airport information and weather data.</p>
+                <p><strong>Ideas:</strong> Live notifications for weather updates at preferred airports.</p>
+            </div>
+        </div>
+
+        <p>We are open to suggestions! Join our <a href="community.html">community</a> to share your ideas and feedback.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CloudClearance. All rights reserved.</p>
+    </footer>
+</body>
+</html>
